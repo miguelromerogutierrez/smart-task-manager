@@ -1,9 +1,9 @@
 import { Box, Grid, Heading } from "@chakra-ui/react"
 import React from "react"
+import { SectionsList } from "./sections-list"
 import { useTodoService } from "./todo-service"
 import { ChatContainer } from "./chat-component/chat-container"
 import { useSocketConnection } from "./socket/use-socket"
-import { TaskSection } from "./components/molecules/tast-section/tast-section"
 
 export const TodoPage = () => {
   // const { getTodos, sections } = useTodoService()
@@ -16,7 +16,6 @@ export const TodoPage = () => {
   return (
     <>
       <Heading>Smart Todo app</Heading>
-      
       <Grid templateColumns={'repeat(2, 1fr)'} gap={10}>
 
         {/* <Box w={400}>
